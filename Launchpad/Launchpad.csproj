@@ -47,6 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookmarkNodeType.cs" />
+    <Compile Include="LauncherTreeview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LauncherTreeview.Designer.cs">
+      <DependentUpon>LauncherTreeview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Launchpad.cs" />
     <Compile Include="LaunchpadView.cs">
       <SubType>UserControl</SubType>
@@ -55,11 +62,28 @@
       <DependentUpon>LaunchpadView.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionExtensions.cs" />
+    <Compile Include="TreeNodeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LaunchpadView.resx">
       <DependentUpon>LaunchpadView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

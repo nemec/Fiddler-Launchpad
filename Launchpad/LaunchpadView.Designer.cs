@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BookmarkTreeview = new System.Windows.Forms.TreeView();
+            this.LauncherTreeview = new Launchpad.LauncherTreeview();
             this.SuspendLayout();
             // 
-            // BookmarkTreeview
+            // LauncherTreeview
             // 
-            this.BookmarkTreeview.AllowDrop = true;
-            this.BookmarkTreeview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LauncherTreeview.AllowDrop = true;
+            this.LauncherTreeview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BookmarkTreeview.Location = new System.Drawing.Point(4, 4);
-            this.BookmarkTreeview.Name = "BookmarkTreeview";
-            this.BookmarkTreeview.Size = new System.Drawing.Size(791, 547);
-            this.BookmarkTreeview.TabIndex = 0;
+            this.LauncherTreeview.LabelEdit = true;
+            this.LauncherTreeview.Location = new System.Drawing.Point(3, 0);
+            this.LauncherTreeview.Name = "LauncherTreeview";
+            this.LauncherTreeview.Size = new System.Drawing.Size(792, 551);
+            this.LauncherTreeview.TabIndex = 1;
             // 
             // LaunchpadView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.BookmarkTreeview);
+            this.Controls.Add(this.LauncherTreeview);
             this.Name = "LaunchpadView";
             this.Size = new System.Drawing.Size(798, 554);
             this.ResumeLayout(false);
@@ -55,7 +56,10 @@
 
         #endregion
 
-        public System.Windows.Forms.TreeView BookmarkTreeview;
+        public LauncherTreeview LauncherTreeview;
+
+
+
 
     }
 }
